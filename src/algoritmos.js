@@ -310,7 +310,7 @@ function runSearch() {
     let t0= performance.now();
     let linearbuscado = linearSearch(listaSearch, valorSearch);
     let t1= performance.now();
-    document.getElementById("linearSearch").innerText = "LinearSearch: " + linearbuscado + "    |   " + (t1 - t0) + " ms."
+    document.getElementById("linearSearch").innerText = "Quantidade localizada: " + linearbuscado + "    |   " + (t1 - t0) + " ms."
     //binarySearchInsertion
     t0= performance.now();
     let insertionSortado = insertionSort(listaSearch);
