@@ -1,1 +1,32 @@
-<p>complexidade works!</p>
+<mat-card class="initial-card">
+    <mat-card-title>Complexidade</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Quantidade de Valores</mat-label>
+            <input matInput id="nElementosCalc" placeholder="Ex: 6">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Quantidade de instruções/s</mat-label>
+            <input matInput id="instPerSecond" placeholder="Ex: 4">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" onclick="runCalc()">Buscar</button>
+    </mat-card-content>
+</mat-card>
+
+<!-- Inserção -->
+<mat-card class="card">
+    <mat-card-title>Inserção</mat-card-title>
+    <mat-card-subtitle id="insertionCalc" class="text">
+        Aperte o botão para Ordenar :))
+    </mat-card-subtitle>
+</mat-card>
+
+<!-- Intercalação -->
+<mat-card class="card">
+    <mat-card-title>Intercalação</mat-card-title>
+    <mat-card-subtitle id="intercalationCalc" class="text">
+        Aperte o botão para Ordenar :))
+    </mat-card-subtitle>
+</mat-card>

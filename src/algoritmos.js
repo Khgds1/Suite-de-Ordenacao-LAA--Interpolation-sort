@@ -250,13 +250,32 @@ function interpolationSort(arday) {
     return arday
 }
 
+//SelectionSort
+function selectionSort(arday) {
+    let n = arday.length;
+
+    for (let i = 0; i < n; i++) {
+        let min = i;
+        for (let j = i + 1; j < n; j++) {
+            if (arday[j] < arday[min]) {
+                min = j;
+            }
+        }
+        if (min != i) {
+            let tmp = arday[i];
+            arday[i] = arday[min];
+            arday[min] = tmp;
+        }
+    }
+    return arday;
+}
 
 //Executores
 function runCalc() {
     let nElementos = document.getElementById("nElementosCalc").value
     let instPerSecond = document.getElementById("instPerSecond").value
-    document.getElementById("insertionCalc").innerText = "Inserção: " + insertionCalc(nElementos, instPerSecond)
-    document.getElementById("intercalationCalc").innerText = "Intercalação: " + intercalationCalc(nElementos, instPerSecond)
+    document.getElementById("insertionCalc").innerText = "Resultado: " + insertionCalc(nElementos, instPerSecond)
+    document.getElementById("intercalationCalc").innerText = "Resultado: " + intercalationCalc(nElementos, instPerSecond)
 }
 function runSort() {
     let listaSort = document.getElementById("listaSort").value;
@@ -271,11 +290,16 @@ function runSort() {
     let bubbleSortado = bubbleSort(listaSort)
     t1 = performance.now()
     document.getElementById("bubbleSort").innerText = "Ordenado: " + bubbleSortado + "    |   " + (t1 - t0) + " ms."
+    //SelectionSort
+    t0 = performance.now()
+    let selectionSortado = selectionSort(listaSort)
+    t1 = performance.now()
+    document.getElementById("selectionSort").innerText = "Ordenado: " + selectionSortado + "    |   " + (t1 - t0) + " ms."
     //interpolationSort
     t0 = performance.now()
-    let countingSortado = interpolationSort(listaSort)
+    let interpolationSortado = interpolationSort(listaSort)
     t1 = performance.now()
-    document.getElementById("interpolationSort").innerText = "Ordenado: " + countingSortado + "    |   " + (t1 - t0) + " ms."
+    document.getElementById("interpolationSort").innerText = "Ordenado: " + interpolationSortado + "    |   " + (t1 - t0) + " ms."
 
 }
 function runSearch() {
