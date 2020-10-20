@@ -5,12 +5,14 @@ import { OrdenacaoComponent } from './pages/ordenacao/ordenacao.component';
 import { ComplexidadeComponent } from './pages/complexidade/complexidade.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 
 const routes: Routes = [
   { path: 'ordenacao', component: OrdenacaoComponent},
   { path: 'busca', component: BuscaComponent},
   { path: 'complexidade', component: ComplexidadeComponent},
   { path: 'menu', component: MenuComponent},
+  { path: 'sobre', component: SobreComponent},
   { path: '', component: OrdenacaoComponent},
   { path: '**', component: Error404Component}
 ];
