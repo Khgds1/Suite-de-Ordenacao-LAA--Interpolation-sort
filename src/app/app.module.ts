@@ -11,13 +11,19 @@ import { BuscaComponent } from './pages/busca/busca.component';
 import { ComplexidadeComponent } from './pages/complexidade/complexidade.component';
 import { OrdenacaoComponent } from './pages/ordenacao/ordenacao.component';
 import { MatInputModule } from '@angular/material/input';
+import { MenuComponent } from './pages/menu/menu.component';
+import { Error404Component } from './pages/error404/error404.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BuscaComponent,
     ComplexidadeComponent,
-    OrdenacaoComponent
+    OrdenacaoComponent,
+    MenuComponent,
+    Error404Component,
+    SobreComponent
   ],
   imports: [
     BrowserModule,

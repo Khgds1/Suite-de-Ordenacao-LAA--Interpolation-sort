@@ -1,0 +1,34 @@
+.text {
+    text-align: center;
+}
+
+.card1 {
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-right: 10px;
+    width: 200px;
+    float: left;
+    background-color: #673AB7;
+    color: white;
+    text-align: center;
+}
+
+.card2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 200px;
+    float: left;
+    background-color: #673AB7;
+    color: white;
+    text-align: center;
+}
+
+.icon {
+    width: 50%;
+}
+
+.header {
+    background-color: #673AB7;
+    color: white;
+}
