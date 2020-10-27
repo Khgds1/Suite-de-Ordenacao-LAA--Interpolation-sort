@@ -16,3 +16,15 @@
 .text {
     color: white;
 }
+
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.initial-card{
+    width: 400px;
+}

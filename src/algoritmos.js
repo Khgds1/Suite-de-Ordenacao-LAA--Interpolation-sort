@@ -157,7 +157,6 @@ function interpolationSort(arday) {
         if (min == max) {
             end = end - size;
         } else {
-            console.log("\n    CAIU NO ELSE")
             var p = 0;
             var bucket = [];
             for (var i = 0; i < size; i++) {

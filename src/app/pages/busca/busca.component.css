@@ -4,7 +4,6 @@
     margin-left: auto;
 }
 .card {
-    margin-top: 20px;
     margin-left: 20px;
     margin-right: 10px;
     width: 200px;
@@ -15,4 +14,16 @@
 }
 .text {
     color: white;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.initial-card{
+    width: 400px;
 }
